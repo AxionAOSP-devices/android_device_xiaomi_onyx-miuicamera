@@ -1,7 +1,7 @@
 From f27d7df7a2cb55aef393a7697a1aed1b0cf4780e Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Sat, 26 Apr 2025 17:58:26 +0200
-Subject: [PATCH 2/7] Add Ultra HDR heic configurations to
+Subject: [PATCH 2/8] Add Ultra HDR heic configurations to
  StreamConfigurationMap constructor
 
 Commit "Add HEIC_ULTRAHDR image format"[1] added three new parameters to the constructor of StreamConfigurationMap.

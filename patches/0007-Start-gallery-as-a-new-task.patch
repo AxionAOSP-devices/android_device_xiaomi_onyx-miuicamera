@@ -1,7 +1,7 @@
 From 6813000d83a97c352931e31dfca8ab2d357b4a36 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Sun, 31 May 2026 17:40:07 +0530
-Subject: [PATCH 7/7] Start gallery as a new task
+Subject: [PATCH 7/8] Start gallery as a new task
 
 When launched from lockscreen user will have to unlock for the gallery to be opened, then the gallery is living in the camera process which is wrong.
 Let it create a new task for it.

@@ -1,0 +1,24 @@
+From 4ac140d4c0b0438e05b2b7e2ee366240797d28e0 Mon Sep 17 00:00:00 2001
+From: AdarshGrewal <adarshgrewal@gmail.com>
+Date: Sun, 31 May 2026 14:42:29 +0530
+Subject: [PATCH 8/8] Add uses-library to load miui-framework
+
+---
+ AndroidManifest.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 1b593c0be..6fcbef62a 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -279,6 +279,7 @@
+         <uses-native-library android:name="libneuron_adapter.so" android:required="false"/>
+         <uses-native-library android:name="libneuronusdk_adapter.mtk.so" android:required="false"/>
+         <uses-library android:name="miui-cameraopt" android:required="false"/>
++        <uses-library android:name="miui-framework" android:required="true"/>
+         <property android:name="android.view.PROPERTY_MIUI_SMOOTH_CORNER_ENABLED" android:value="true"/>
+         <receiver android:enabled="@bool/priority_storage" android:exported="true" android:name="com.android.camera.storage.PriorityStorageBroadcastReceiver">
+             <intent-filter>
+-- 
+2.54.0
+

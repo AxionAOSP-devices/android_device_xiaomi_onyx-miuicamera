@@ -1,7 +1,7 @@
 From fa769787f7e7bea0a2d8b3cc8dcf093e3317f29c Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Fri, 8 Mar 2024 02:11:53 +0100
-Subject: [PATCH 5/7] Support third party galleries
+Subject: [PATCH 5/8] Support third party galleries
 
 ---
  smali/com/android/camera/k3.smali       | 4 ----
