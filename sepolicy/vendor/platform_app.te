@@ -10,10 +10,18 @@ allow platform_app vendor_camera_data_file:file { getattr open read };
 
 allow platform_app app_data_file:file execute;
 
+allow platform_app migt_dev:chr_file { getattr ioctl open read write };
+allow platform_app sysfs_migt:file { getattr open read };
+
+allow platform_app hal_touchfeature_xiaomi_service:service_manager find;
+binder_call(platform_app, hal_touchfeature_xiaomi_default)
+
 # Properties
+get_prop(platform_app, qemu_hw_prop)
 get_prop(platform_app, vendor_audio_prop)
 get_prop(platform_app, vendor_camera_p3enable_prop)
 get_prop(platform_app, vendor_camera_sensor_prop)
 get_prop(platform_app, vendor_display_prop)
 get_prop(platform_app, vendor_displayfeature_prop)
 get_prop(platform_app, vendor_panel_info_prop)
+get_prop(platform_app, vendor_touchfeature_prop)
